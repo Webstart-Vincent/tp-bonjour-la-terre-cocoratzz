@@ -1,1 +1,1 @@
-https://bonjourlaterre.netlify.app/
+bonjourlaterre.netlify.app
