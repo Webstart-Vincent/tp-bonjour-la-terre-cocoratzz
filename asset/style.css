@@ -9,25 +9,45 @@ header {
     justify-items: center;
 }
 
-img,
-h1 {
+img {
     /* Les deux grid-items occupent la même cellule de la grile */
     grid-area: 1 / 1 / 2 / 2;
     /* la largeur de l'image */
     width: 715px;
-    /* la couleur du titre */
-    color: #94ce5a;
-    /* ? */
     gap: 64px;
     /* pour centrer le titre */
     text-align: center;
 }
 
 main {
-    max-width: 10000x;
+    max-width: 1000x;
     margin: auto;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+article {
+    background-color: #21315a;
+    padding: 12px;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    /* la couleur du titre */
+    color: #94ce5a;
+}
+
+p {
+    /* la couleur du texte */
+    color: #fff;
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
