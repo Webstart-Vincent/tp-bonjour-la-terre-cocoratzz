@@ -1,22 +1,60 @@
 header {
-    /* fond */
     background-color: #21315a;
-    /* création d'une grille mais sans définir de colonnes */
     display: grid;
-    /* aligner les gird-items par le bas */
-    align-items: end;
-    /* centrer les gird-items horizontalement */
     justify-items: center;
+    align-items: end;
 }
 
-img {
-    /* Les deux grid-items occupent la même cellule de la grile */
+h1,
+header > img {
     grid-area: 1 / 1 / 2 / 2;
-    /* la largeur de l'image */
-    width: 715px;
+}
+
+header > img {
+    max-width: 715px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* header {
+    fond
+    background-color: #21315a;
+    création d'une grille mais sans définir de colonnes 
+    display: grid;
+    aligner les gird-items par le bas 
+    align-items: end;
+    centrer les gird-items horizontalement
+    justify-items: center;
+} */
+
+/* img { 
+    Les deux grid-items occupent la même cellule de la grile
+    grid-area: 1 / 1 / 2 / 2;
+    la largeur de l'image 
+    max-width: 715px;
     gap: 64px;
-    /* pour centrer le titre */
+    pour centrer le titre
     text-align: center;
+} */
+
+/*main {
+    max-width: 1000x;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}*/
+
+article {
+    background-color: #21315a;
+    /* padding: 12px;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;*/
 }
 
 h1 {
@@ -24,24 +62,7 @@ h1 {
     font-weight: 700;
     font-style: italic;
     font-size: 64px;
-    color: #94ce5a; */
-}
-
-main {
-    max-width: 1000x;
-    margin: auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-article {
-    background-color: #21315a;
-    padding: 12px;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 32px;
+    color: #94ce5a;
 }
 
 h2 {
@@ -49,16 +70,16 @@ h2 {
     justify-content: center;
     /* la couleur du titre */
     color: #94ce5a;
-    font-weight: 900;
+    /* font-weight: 900;
     font-style: normal;
-    font-size: 32px;
+    font-size: 32px;*/
 }
 
 p {
     /* la couleur du texte */
     color: #fff;
-    text-align: left;
+    /* text-align: left;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 16px; */
 }
