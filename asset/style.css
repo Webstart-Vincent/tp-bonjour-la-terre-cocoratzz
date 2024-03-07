@@ -92,3 +92,28 @@ p {
 
     color: white;
 }
+
+/* ------------------------------------Partie Mobile------------------------------------ */
+
+@media (max-width: 679px) {
+    body {
+        width: 895px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .container > img {
+        order: 1;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
