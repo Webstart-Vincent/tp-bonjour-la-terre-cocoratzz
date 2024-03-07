@@ -1,45 +1,35 @@
 body {
-    color: #fff;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
 }
+
 header {
     display: grid;
     align-items: end;
     justify-items: center;
     background-color: #21315a;
 }
+
 h1 {
     font-weight: 700;
     font-style: italic;
     font-size: 64px;
-    padding-bottom: 36px;
+    padding-bottom: 15px;
+    color: #94ce5a;
 }
+
 h2 {
+    text-align: center;
     font-weight: 900;
     font-size: 32px;
 }
-h1,
-h2 {
-    text-align: center;
-    color: #94ce5a;
-}
+
 header > img,
 h1 {
     grid-area: 1 / 1 / 2 / 2;
 }
+
 header > img {
     max-width: 715px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
 }
 
 article {
@@ -50,4 +40,52 @@ article {
     display: grid;
     gap: 10px;
     align-content: start;
+}
+
+/* ------------------------------------Deuxième partie du projet------------------------------------ */
+
+.earth-and-moon {
+    background-color: #242830;
+}
+
+.earth-low-poly {
+    background-color: #f5f7f8;
+}
+
+.earth-pixel {
+    background-color: #000;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.article {
+    background-color: #21315a;
+    padding: 12px;
+}
+
+h2 {
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+    padding-bottom: 13px;
+
+    display: flex;
+    justify-content: center;
+    color: #94ce5a;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    color: white;
 }
