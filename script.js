@@ -9,11 +9,11 @@ const setUi = () => {
     carrousel.style.transform = `translateX(-${index * 100}%)`;
     // Changer la couleur du body
     if (index == 0) {
-        bodyColor.style.backgroundColor = `#242830`;
+        bodycolor.style.backgroundColor = `#242830`;
     } else if (index == 1) {
-        bodyColor.style.backgroundColor = `#f5f7f8`;
+        bodycolor.style.backgroundColor = `#f5f7f8`;
     } else if (index == 2) {
-        bodyColor.style.backgroundColor = `#000`;
+        bodycolor.style.backgroundColor = `#000`;
     }
 };
 
