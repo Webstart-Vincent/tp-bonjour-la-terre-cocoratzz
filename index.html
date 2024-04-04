@@ -2,87 +2,114 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bienvenue sur Terre</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"
-            rel="stylesheet"
-        />
+        <!-- Ajouter la balise script:src -->
+
         <link rel="stylesheet" href="./asset/reset.css" />
         <link rel="stylesheet" href="./asset/style.css" />
+        <!-- Ajouter les deux boutons de navigation du carrousel -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+
+        <script src="./script.js" defer></script>
     </head>
     <body>
         <header>
+            <!-- image principal -->
             <img src="./asset/img/bonjour-la-terre.gif" alt="Gif animé" />
             <h1>Bienvenue sur terre !</h1>
         </header>
-        <section class="earth-and-moon">
-            <div class="container">
-                <img
-                    src="asset/img/earth-and-moon.gif"
-                    alt="GIF earth and moon"
-                />
-                <div class="article">
-                    <h2>La Terre et la Lune</h2>
-                    <p>
-                        Terre, lune, terre, lune. Ce soir j'ai mis mes ailes
-                        d'or Dans le ciel comme un météore Je pars. Terre, lune,
-                        terre, lune J'ai quitté ma vieille atmosphère J'ai
-                        laissé les morts et les guerres Au revoir. Dans le ciel
-                        piqué de planètes Tout seul sur une lune vide Je rirai
-                        du monde stupide Et des hommes qui font les bêtes.
-                        Terre, lune, terre, lune Adieu ma ville adieu mon cœur
-                        Globe tout perclus de douleurs Bonsoir
-                    </p>
-                </div>
+        <main>
+            <!-- <div class="slides-container"> -->
+            <div class="carrousel">
+                <!-- première image -->
+                <section class="earth-and-moon">
+                    <div class="container">
+                        <img
+                            src="asset/img/earth-and-moon.gif"
+                            alt="GIF earth and moon"
+                        />
+                        <div class="article">
+                            <h2>La Terre et la Lune</h2>
+                            <p>
+                                Terre, lune, terre, lune. Ce soir j'ai mis mes
+                                ailes d'or Dans le ciel comme un météore Je
+                                pars. Terre, lune, terre, lune J'ai quitté ma
+                                vieille atmosphère J'ai laissé les morts et les
+                                guerres Au revoir. Dans le ciel piqué de
+                                planètes Tout seul sur une lune vide Je rirai du
+                                monde stupide Et des hommes qui font les bêtes.
+                                Terre, lune, terre, lune Adieu ma ville adieu
+                                mon cœur Globe tout perclus de douleurs Bonsoir
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- deucième image -->
+                <section class="earth-low-poly">
+                    <div class="container">
+                        <img
+                            src="asset/img/earth-low-poly.gif"
+                            alt="GIF earth low poly"
+                        />
+                        <div class="article">
+                            <h2>La Terre poly</h2>
+                            <p>
+                                Cette nuit-là je regardais la lune Oui j'étais à
+                                ma fenêtre et je la regardais et puis j'ai
+                                quitté ma fenêtre je me suis déshabillée et je
+                                me suis couchée et puis alors la chambre est
+                                devenue très claire la lune était entrée Oui
+                                j'avais laissé la fenêtre ouverte et la lune
+                                était entrée Elle était là cette nuit-là dans ma
+                                chambre et elle brillait J'aurais pu lui parler
+                                J'aurai pu la toucher
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- troisième image -->
+                <section class="earth-pixel">
+                    <div class="container">
+                        <img
+                            src="asset/img/earth-pixel.gif"
+                            alt="GIF earth pixel"
+                        />
+                        <div class="article">
+                            <h2>La Terre earth-pixel</h2>
+                            <p>
+                                La Terre se meurt. On commence seulemnt à le
+                                constater. A avoir des doutes même un peu peur.
+                                Faudrait s'en occuper. On nous dit que montent
+                                les océans. Pas étonnant. Les fonds marins sont
+                                tapissés de nos déjections. Il faudrait peut
+                                être arrêter ces pollutions! Combien de
+                                Tchernobil. Combien d'enfants malformés.3
+                                Comment l'homme peut il s'entretuer. Il faut
+                                être débile. Notre Terre meur et l'humain s'en
+                                fout. Pour surbriller il est prêt à tout.
+                                Taillant coupant pour tout mettre à son goût.
+                                Même si pour certains ça inspire le dégoût.
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-
-        <section class="earth-low-poly">
-            <div class="container">
-                <img
-                    src="asset/img/earth-low-poly.gif"
-                    alt="GIF earth low poly"
-                />
-                <div class="article">
-                    <h2>La Terre poly</h2>
-                    <p>
-                        Cette nuit-là je regardais la lune Oui j'étais à ma
-                        fenêtre et je la regardais et puis j'ai quitté ma
-                        fenêtre je me suis déshabillée et je me suis couchée et
-                        puis alors la chambre est devenue très claire la lune
-                        était entrée Oui j'avais laissé la fenêtre ouverte et la
-                        lune était entrée Elle était là cette nuit-là dans ma
-                        chambre et elle brillait J'aurais pu lui parler J'aurai
-                        pu la toucher
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="earth-pixel">
-            <div class="container">
-                <img src="asset/img/earth-pixel.gif" alt="GIF earth pixel" />
-                <div class="article">
-                    <h2>La Terre earth-pixel</h2>
-                    <p>
-                        La Terre se meurt. On commence seulemnt à le constater.
-                        A avoir des doutes même un peu peur. Faudrait s'en
-                        occuper. On nous dit que montent les océans. Pas
-                        étonnant. Les fonds marins sont tapissés de nos
-                        déjections. Il faudrait peut être arrêter ces
-                        pollutions! Combien de Tchernobil. Combien d'enfants
-                        malformés.3 Comment l'homme peut il s'entretuer. Il faut
-                        être débile. Notre Terre meur et l'humain s'en fout.
-                        Pour surbriller il est prêt à tout. Taillant coupant
-                        pour tout mettre à son goût. Même si pour certains ça
-                        inspire le dégoût.
-                    </p>
-                </div>
-            </div>
-        </section>
+            <!-- </div> -->
+            <!-- flèche précèdente -->
+            <!-- arial-label : quand on utilise un bouton sans contenu et decrire l'action du bouton -->
+            <button
+                class="bi bi-chevron-left"
+                arial-label="Diapositive précèdente"
+            ></button>
+            <!-- flèche suivante -->
+            <button
+                class="bi bi-chevron-right"
+                arial-label="Diapositive suivante"
+            ></button>
+        </main>
     </body>
 </html>
