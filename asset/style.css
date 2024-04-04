@@ -1,5 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #242830;
 }
 
 header {
@@ -46,22 +47,22 @@ article {
 
 .earth-and-moon {
     background-color: #242830;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .earth-low-poly {
     background-color: #f5f7f8;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .earth-pixel {
     background-color: #000;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .container {
-    max-width: 960px;
-    margin: auto;
+    /* max-width: 960px;
+    margin: auto; */
 
     display: grid;
     grid-template-columns: 7fr 5fr;
@@ -93,25 +94,105 @@ p {
     color: white;
 }
 
+/* ------------------------------------Troisième partie du projet : créer le carrousel------------------------------------ */
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+    /* faire flotter les deux boutons au-dessus du carrousel soit avec la grille ou avec la position absolute*/
+    position: relative;
+    /* on cache le débord du carrousel */
+    overflow: hidden;
+}
+
+.container {
+    /* max-width: 960px;
+    margin: auto; */
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 20px;
+    align-items: center;
+}
+
+section {
+    padding: 20px 80px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Faire glisser les diapositives */
+.carrousel {
+    display: flex;
+    transition: 0.3s ease-out;
+}
+
+.bi-chevron-left,
+.bi-chevron-right {
+    color: #94ce5a;
+    font-size: 34px;
+    background-color: #21315a;
+    border: #94ce5a 2px solid;
+    /* Pour faire des boutons rond */
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /* centrer précisement les chevrons au milieu de leurs cercles */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bi-chevron-left {
+    left: 25px;
+}
+
+.bi-chevron-right {
+    right: 25px;
+}
+
+.earth-and-moon {
+    background-color: #242830;
+    /* padding: 20px; */
+}
+
+.earth-low-poly {
+    background-color: #f5f7f8;
+    /* padding: 20px; */
+}
+
+.earth-pixel {
+    background-color: #000;
+    /* padding: 20px; */
+}
 /* ------------------------------------Partie Mobile------------------------------------ */
 
 @media (max-width: 679px) {
-    body {
+    /* body {
         width: 895px;
-    }
+    } */
 
     section {
         padding: 20px;
     }
 
     .container {
+        /* configurer la grille */
         grid-template-columns: 1fr;
         gap: 0px;
     }
 
+    /* Pour ré-ordonner les grid items */
     .container > img {
         order: 1;
     }
+
+    /* ou 
+    .container > article {
+        order : -1
+    } */
 
     h1 {
         font-size: 36px;
