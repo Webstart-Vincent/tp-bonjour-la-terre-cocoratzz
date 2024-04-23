@@ -20,19 +20,18 @@
         <header>
             <!-- image principal -->
             <img src="./asset/img/bonjour-la-terre.gif" alt="Gif animé" />
-            <h1>Bienvenue sur terre !</h1>
+            <h1>Bienvenue sur Terre !</h1>
         </header>
         <main>
-            <!-- <div class="slides-container"> -->
-            <div class="carrousel">
+            <div class="slides-container">
                 <!-- première image -->
                 <section class="earth-and-moon">
                     <div class="container">
                         <img
-                            src="asset/img/earth-and-moon.gif"
-                            alt="GIF earth and moon"
+                            src="./asset/img/earth-and-moon.gif"
+                            alt="Gif animé"
                         />
-                        <div class="article">
+                        <article>
                             <h2>La Terre et la Lune</h2>
                             <p>
                                 Terre, lune, terre, lune. Ce soir j'ai mis mes
@@ -45,17 +44,17 @@
                                 Terre, lune, terre, lune Adieu ma ville adieu
                                 mon cœur Globe tout perclus de douleurs Bonsoir
                             </p>
-                        </div>
+                        </article>
                     </div>
                 </section>
-                <!-- deucième image -->
+                <!-- deuxième image -->
                 <section class="earth-low-poly">
                     <div class="container">
                         <img
-                            src="asset/img/earth-low-poly.gif"
-                            alt="GIF earth low poly"
+                            src="./asset/img/earth-low-poly.gif"
+                            alt="Gif animé"
                         />
-                        <div class="article">
+                        <article>
                             <h2>La Terre poly</h2>
                             <p>
                                 Cette nuit-là je regardais la lune Oui j'étais à
@@ -68,17 +67,17 @@
                                 chambre et elle brillait J'aurais pu lui parler
                                 J'aurai pu la toucher
                             </p>
-                        </div>
+                        </article>
                     </div>
                 </section>
                 <!-- troisième image -->
                 <section class="earth-pixel">
                     <div class="container">
                         <img
-                            src="asset/img/earth-pixel.gif"
-                            alt="GIF earth pixel"
+                            src="./asset/img/earth-pixel.gif"
+                            alt="Gif animé"
                         />
-                        <div class="article">
+                        <article>
                             <h2>La Terre earth-pixel</h2>
                             <p>
                                 La Terre se meurt. On commence seulemnt à le
@@ -94,22 +93,26 @@
                                 Taillant coupant pour tout mettre à son goût.
                                 Même si pour certains ça inspire le dégoût.
                             </p>
-                        </div>
+                        </article>
                     </div>
                 </section>
             </div>
-            <!-- </div> -->
             <!-- flèche précèdente -->
-            <!-- arial-label : quand on utilise un bouton sans contenu et decrire l'action du bouton -->
+            <!-- aria-label : quand on utilise un bouton sans contenu et decrire l'action du bouton -->
             <button
                 class="bi bi-chevron-left"
-                arial-label="Diapositive précèdente"
+                aria-label="Diapositive précédente"
             ></button>
             <!-- flèche suivante -->
             <button
                 class="bi bi-chevron-right"
-                arial-label="Diapositive suivante"
+                aria-label="Diapositive suivante"
             ></button>
+            <div class="navigation">
+                <span class="premiere dot"></span>
+                <span class="deuxieme dot"></span>
+                <span class="troisieme dot"></span>
+            </div>
         </main>
     </body>
 </html>
