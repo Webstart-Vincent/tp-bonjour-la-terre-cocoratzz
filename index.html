@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bienvenue sur Terre</title>
-        <!-- Ajouter la balise script:src -->
+        <title>TP Bonjour la Terre - 4e partie</title>
 
         <link rel="stylesheet" href="./asset/reset.css" />
         <link rel="stylesheet" href="./asset/style.css" />
-        <!-- Ajouter les deux boutons de navigation du carrousel -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -18,17 +16,15 @@
     </head>
     <body>
         <header>
-            <!-- image principal -->
-            <img src="./asset/img/bonjour-la-terre.gif" alt="Gif animé" />
+            <img src="./asset/img/img_1/bonjour-la-terre.gif" alt="Gif animé" />
             <h1>Bienvenue sur Terre !</h1>
         </header>
         <main>
             <div class="slides-container">
-                <!-- première image -->
                 <section class="earth-and-moon">
                     <div class="container">
                         <img
-                            src="./asset/img/earth-and-moon.gif"
+                            src="./asset/img/img_1/earth-and-moon.gif"
                             alt="Gif animé"
                         />
                         <article>
@@ -47,11 +43,10 @@
                         </article>
                     </div>
                 </section>
-                <!-- deuxième image -->
                 <section class="earth-low-poly">
                     <div class="container">
                         <img
-                            src="./asset/img/earth-low-poly.gif"
+                            src="./asset/img/img_1/earth-low-poly.gif"
                             alt="Gif animé"
                         />
                         <article>
@@ -70,11 +65,10 @@
                         </article>
                     </div>
                 </section>
-                <!-- troisième image -->
                 <section class="earth-pixel">
                     <div class="container">
                         <img
-                            src="./asset/img/earth-pixel.gif"
+                            src="./asset/img/img_1/earth-pixel.gif"
                             alt="Gif animé"
                         />
                         <article>
@@ -97,22 +91,44 @@
                     </div>
                 </section>
             </div>
-            <!-- flèche précèdente -->
-            <!-- aria-label : quand on utilise un bouton sans contenu et decrire l'action du bouton -->
             <button
                 class="bi bi-chevron-left"
                 aria-label="Diapositive précédente"
             ></button>
-            <!-- flèche suivante -->
             <button
                 class="bi bi-chevron-right"
                 aria-label="Diapositive suivante"
             ></button>
-            <div class="navigation">
-                <span class="premiere dot"></span>
-                <span class="deuxieme dot"></span>
-                <span class="troisieme dot"></span>
+            <div class="bullets">
+                <button aria-label="Aller à la première diapositive"></button>
+                <button aria-label="Aller à la deuxième diapositive"></button>
+                <button aria-label="Aller à la troisième diapositive"></button>
             </div>
         </main>
+        <!-- Partie Météo -->
+        <div class="grid-container">
+            <div class="location-box">
+                <!-- Liste des lieux -->
+                <ul>
+                    <li class="country">France</li>
+                    <li class="country">Alaska</li>
+                    <li class="country">Japon</li>
+                    <li class="country">Mont Kilimandjaro</li>
+                    <li class="country">Mexique</li>
+                    <!-- Ajoutez plus de lieux si besoin -->
+                </ul>
+            </div>
+            <div class="information">
+                <!-- Votre contenu pour la partie droite -->
+                <h2></h2>
+                <p class="temperature"></p>
+                <img
+                    class="loader-image"
+                    src="./asset/img/img_2/loader.svg"
+                    alt="Loader"
+                    style="display: none"
+                />
+            </div>
+        </div>
     </body>
 </html>
